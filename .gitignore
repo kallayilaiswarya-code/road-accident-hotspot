@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+data/raw/
+data/sample/
+data/processed/*.csv
+data/processed/accidents_cleaned/
+tmp/

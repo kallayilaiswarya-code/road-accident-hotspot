@@ -1,0 +1,22 @@
+Random Forest Risk Prediction Evaluation
+========================================
+
+Training records: 80000
+Testing records: 20000
+Balanced Accuracy: 0.5167
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         Low       0.00      0.00      0.00        20
+      Medium       0.82      0.74      0.78     11005
+        High       0.72      0.81      0.76      8975
+
+    accuracy                           0.77     20000
+   macro avg       0.51      0.52      0.51     20000
+weighted avg       0.78      0.77      0.77     20000
+
+Confusion Matrix [Low, Medium, High]:
+[[   0   13    7]
+ [   1 8165 2839]
+ [   0 1722 7253]]
