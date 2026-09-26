@@ -100,13 +100,9 @@ st.markdown(
 
 @st.cache_data
 def load_data():
-    clustered = pd.read_csv(
-        DATA_DIR / "accidents_clustered.csv"
-    )
+    clustered = pd.read_csv(BASE_DIR / "dashboard" / "dashboard_data.csv")
 
-    engineered = pd.read_csv(
-        DATA_DIR / "accidents_engineered.csv"
-    )
+    engineered = clustered.copy()
 
     hotspots = pd.read_csv(
         OUTPUT_DIR / "hotspot_summary.csv"
